@@ -1,6 +1,11 @@
-﻿body {
+﻿html {
+    height: 100%;
+}
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+    min-height: 100%;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,22 +28,28 @@ textarea {
     max-width: 280px;
 }
 
+
 /*Color Variables Used On Site*/
 :root {
     --white: #ffffff;
     --dark-blue: #003399;
     --mid-blue: #3366CC;
     --light-blue: #6699FF;
+    --google-red: #d62d20;
+    --google-orange: #ffa700;
+    --google-blue: #0057e7;
+    --google-green: #008744;
 }
 
 /*Navbar Styling*/
 .navbar-inverse {
-    background-color: var(--white); 
-    border-color: var(--white);
+    background-color: transparent; 
+    border-color: transparent;
 }
 
 .navbar-inverse a.navbar-brand {
     color: var(--light-blue);
+    font-size: 3rem;
 }
 
 .navbar-inverse a.navbar-brand:hover {
@@ -47,6 +58,7 @@ textarea {
 
 a#registerLink {
     color: var(--light-blue);
+    font-size: 2rem;
 }
 
 a#registerLink:hover {
@@ -55,6 +67,7 @@ a#registerLink:hover {
 
 a#loginLink {
     color: var(--light-blue);
+    font-size: 2rem;
 }
 
 a#loginLink:hover {
@@ -62,18 +75,26 @@ a#loginLink:hover {
 }
 
 /*Index Styling*/
+.home-body {
+    background: url("https://images.unsplash.com/photo-1532356884227-66d7c0e9e4c2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bf58c9f10337e3cc2a4b8b3305944748&auto=format&fit=crop&w=1050&q=80");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
 .jumbotron {
-    background-color: var(--white);
+    background-color: transparent;
     margin-top: 3rem;
 }
 
 .jumbotron h1 {
     text-align: center;
-    color: var(--light-blue);
+    color: var(--white);
 }
 
 .lead {
-    color: var(--light-blue);
+    color: var(--white);
     letter-spacing: .3rem;
 }
 
@@ -94,8 +115,82 @@ a.btn.btn-primary.btn-lg:hover {
 
 }
 
+/*Register Page Styling*/
+#Google {
+    background-color: var(--google-orange);
+    border-color: var(--google-orange);
+    color: var(--white);
+}
+
+#Google:hover {
+    background-color: var(--google-red);
+    border-color: var(--google-red);
+    color: var(--white);
+}
+
+#register-btn {
+    background-color: var(--google-blue);
+    border-color: var(--google-blue);
+    color: var(--white);
+}
+
+#register-btn:hover {
+    background-color: var(--google-green);
+    border-color: var(--google-green);
+    color: white;
+}
+
+.register-body {
+    background: url("https://images.unsplash.com/photo-1521453159160-6b5c58c24591?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=149a5703e1ecd9f4a6b01c1f8f8280c6&auto=format&fit=crop&w=962&q=80");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#new-account-col {
+    margin-top: 5rem;
+}
+
+#register-another-service {
+    margin-top: 5rem;
+}
+
+/*Login Page Styling*/
+.login-body {
+    background: url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=044e5d85cd16e79671287971a06be066&auto=format&fit=crop&w=1050&q=80");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+}
+
+.login-col {
+    margin-top: 5rem;
+}
+
+#login-btn {
+    background-color: var(--google-blue);
+    border-color: var(--google-blue);
+    color: var(--white);
+}
+
+#login-btn:hover {
+    background-color: var(--google-green);
+    border-color: var(--google-green);
+    color: var(--white);
+}
+
+#new-user-link a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+#new-user-link a:hover {
+    color: var(--google-blue);
+   
+}
 /*Footer Styling*/
 footer p {
     text-align: center;
-    color: var(--light-blue);
+    color: var(--white);
 }
